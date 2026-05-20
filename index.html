@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="site-noise"></div>
+    <div class="mesh mesh-a"></div>
+    <div class="mesh mesh-b"></div>
+
     <div class="page-shell">
       <header class="topbar">
         <a class="brand" href="#home">
@@ -21,7 +25,8 @@
         <nav class="nav">
           <a href="#about">About</a>
           <a href="#expertise">Expertise</a>
-          <a href="#impact">Impact</a>
+          <a href="#projects">Projects</a>
+          <a href="#stack">Stack</a>
           <a href="#contact">Contact</a>
         </nav>
 
@@ -30,8 +35,13 @@
 
       <main>
         <section class="hero section" id="home">
-          <div class="hero-copy reveal">
-            <p class="eyebrow">Available for reliability, cloud, and platform engineering opportunities</p>
+          <div class="hero-copy reveal" data-reveal="hero">
+            <div class="availability-badge">
+              <span class="availability-ping"></span>
+              Available for reliability, cloud, and platform engineering opportunities
+            </div>
+
+            <p class="eyebrow">Site Reliability Engineer | Cloud Infrastructure &amp; Observability Engineer</p>
             <h1>
               Building resilient cloud systems with
               <span>clarity, automation, and observability.</span>
@@ -43,8 +53,17 @@
             </p>
 
             <div class="hero-actions">
-              <a class="button button-primary" href="mailto:Maheshyelamarthy1@gmail.com">Email Me</a>
-              <a class="button button-secondary" href="https://github.com/Mahesh-yelamarthy" target="_blank" rel="noreferrer">View GitHub</a>
+              <a class="button button-primary" href="mailto:Maheshyelamarthy1@gmail.com">
+                <span>Email Me</span>
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://github.com/Mahesh-yelamarthy"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span>View GitHub</span>
+              </a>
             </div>
 
             <ul class="hero-pills">
@@ -57,11 +76,15 @@
             </ul>
           </div>
 
-          <div class="hero-visual reveal">
-            <div class="portrait-frame">
+          <div class="hero-visual reveal" data-reveal="hero">
+            <div class="hero-halo hero-halo-a"></div>
+            <div class="hero-halo hero-halo-b"></div>
+
+            <div class="portrait-frame tilt-card" data-tilt>
               <div class="portrait-orbit orbit-one"></div>
               <div class="portrait-orbit orbit-two"></div>
               <div class="portrait-grid"></div>
+              <div class="portrait-scan"></div>
               <img src="assets/profile.png" alt="Portrait of Mahesh Yelamarthy" />
             </div>
 
@@ -78,10 +101,15 @@
               <strong>Cloud Reliability</strong>
               <span>Infrastructure, observability, and scalable delivery pipelines.</span>
             </div>
+
+            <div class="floating-card glass-chip hero-chip">
+              <span>Cloud-native systems</span>
+              <strong>Built for stability</strong>
+            </div>
           </div>
         </section>
 
-        <section class="signal-band reveal">
+        <section class="signal-band reveal" data-reveal="band">
           <div class="signal-card">
             <span>Role Focus</span>
             <strong>Site Reliability Engineer</strong>
@@ -175,6 +203,201 @@
           </div>
         </section>
 
+        <section class="section projects" id="projects">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Featured Projects</p>
+            <h2>Selected infrastructure and platform work presented with a more premium engineering lens.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal tilt-card" data-tilt>
+              <div class="project-thumb thumb-monitoring">
+                <div class="thumb-grid"></div>
+                <div class="thumb-bars">
+                  <span></span><span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>Kubernetes Monitoring Stack</h3>
+                <p>Production-ready monitoring setup for Kubernetes clusters with visibility into system health, workloads, and alerting signals.</p>
+                <ul class="badge-row">
+                  <li>Kubernetes</li>
+                  <li>Prometheus</li>
+                  <li>Grafana</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="project-link" href="https://github.com/Mahesh-yelamarthy" target="_blank" rel="noreferrer">GitHub</a>
+                  <span class="project-link muted-link">Live Demo</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-tilt>
+              <div class="project-thumb thumb-terraform">
+                <div class="thumb-layers"></div>
+                <div class="thumb-code">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>AWS Terraform Infrastructure</h3>
+                <p>Reusable infrastructure definitions for AWS environments focused on consistency, scalability, and operational repeatability.</p>
+                <ul class="badge-row">
+                  <li>AWS</li>
+                  <li>Terraform</li>
+                  <li>IaC</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="project-link" href="https://github.com/Mahesh-yelamarthy" target="_blank" rel="noreferrer">GitHub</a>
+                  <span class="project-link muted-link">Live Demo</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-tilt>
+              <div class="project-thumb thumb-gitops">
+                <div class="thumb-flow">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3>GitOps CI/CD Pipeline</h3>
+                <p>Deployment workflow centered on automated delivery, safer releases, and infrastructure changes that remain observable and controlled.</p>
+                <ul class="badge-row">
+                  <li>GitOps</li>
+                  <li>CI/CD</li>
+                  <li>Automation</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="project-link" href="https://github.com/Mahesh-yelamarthy" target="_blank" rel="noreferrer">GitHub</a>
+                  <span class="project-link muted-link">Live Demo</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-tilt>
+              <div class="project-thumb thumb-observability">
+                <div class="thumb-rings"></div>
+                <div class="thumb-center"></div>
+              </div>
+              <div class="project-body">
+                <h3>Observability Dashboard</h3>
+                <p>Unified dashboard concept for metrics, logs, and alerting signals that improves operational awareness across cloud systems.</p>
+                <ul class="badge-row">
+                  <li>Monitoring</li>
+                  <li>Logs</li>
+                  <li>Dashboards</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="project-link" href="https://github.com/Mahesh-yelamarthy" target="_blank" rel="noreferrer">GitHub</a>
+                  <span class="project-link muted-link">Live Demo</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal tilt-card" data-tilt>
+              <div class="project-thumb thumb-reliability">
+                <div class="thumb-shield"></div>
+                <div class="thumb-pulse"></div>
+              </div>
+              <div class="project-body">
+                <h3>Production Reliability Toolkit</h3>
+                <p>Utilities and operational patterns aimed at improving resilience, incident readiness, and platform confidence in production.</p>
+                <ul class="badge-row">
+                  <li>SRE</li>
+                  <li>Runbooks</li>
+                  <li>Reliability</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="project-link" href="https://github.com/Mahesh-yelamarthy" target="_blank" rel="noreferrer">GitHub</a>
+                  <span class="project-link muted-link">Live Demo</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section stack" id="stack">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Tech Stack</p>
+            <h2>Skills grouped into the systems layers that matter most in modern infrastructure engineering.</h2>
+          </div>
+
+          <div class="stack-grid">
+            <article class="stack-card reveal">
+              <div class="stack-head">
+                <span class="stack-icon">☁</span>
+                <h3>Cloud</h3>
+              </div>
+              <ul class="stack-badges">
+                <li>AWS</li>
+                <li>Cloud Architecture</li>
+                <li>Scalable Infrastructure</li>
+              </ul>
+            </article>
+
+            <article class="stack-card reveal">
+              <div class="stack-head">
+                <span class="stack-icon">⬢</span>
+                <h3>Containers</h3>
+              </div>
+              <ul class="stack-badges">
+                <li>Kubernetes</li>
+                <li>Container Platforms</li>
+                <li>Cluster Operations</li>
+              </ul>
+            </article>
+
+            <article class="stack-card reveal">
+              <div class="stack-head">
+                <span class="stack-icon">#</span>
+                <h3>Infrastructure as Code</h3>
+              </div>
+              <ul class="stack-badges">
+                <li>Terraform</li>
+                <li>Reusable Modules</li>
+                <li>Environment Consistency</li>
+              </ul>
+            </article>
+
+            <article class="stack-card reveal">
+              <div class="stack-head">
+                <span class="stack-icon">⇄</span>
+                <h3>CI/CD</h3>
+              </div>
+              <ul class="stack-badges">
+                <li>Automated Delivery</li>
+                <li>Pipeline Reliability</li>
+                <li>GitOps Workflows</li>
+              </ul>
+            </article>
+
+            <article class="stack-card reveal">
+              <div class="stack-head">
+                <span class="stack-icon">◌</span>
+                <h3>Monitoring &amp; Observability</h3>
+              </div>
+              <ul class="stack-badges">
+                <li>Metrics</li>
+                <li>Logging</li>
+                <li>Alerting</li>
+              </ul>
+            </article>
+
+            <article class="stack-card reveal">
+              <div class="stack-head">
+                <span class="stack-icon">&gt;_</span>
+                <h3>Programming / Scripting</h3>
+              </div>
+              <ul class="stack-badges">
+                <li>Automation</li>
+                <li>Operational Scripting</li>
+                <li>Platform Tooling</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
         <section class="section impact" id="impact">
           <div class="section-heading reveal">
             <p class="eyebrow">Impact Profile</p>
@@ -251,8 +474,12 @@
             </div>
 
             <div class="contact-actions">
-              <a class="button button-primary" href="mailto:Maheshyelamarthy1@gmail.com">Start a Conversation</a>
-              <a class="button button-secondary" href="https://www.linkedin.com/in/yelamarthymahesh" target="_blank" rel="noreferrer">Connect on LinkedIn</a>
+              <a class="button button-primary" href="mailto:Maheshyelamarthy1@gmail.com">
+                <span>Start a Conversation</span>
+              </a>
+              <a class="button button-secondary" href="https://www.linkedin.com/in/yelamarthymahesh" target="_blank" rel="noreferrer">
+                <span>Connect on LinkedIn</span>
+              </a>
             </div>
           </div>
         </section>
