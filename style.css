@@ -410,9 +410,10 @@ img {
 
 .hero-proof {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
+  grid-template-columns: minmax(0, 1.02fr) minmax(0, 0.98fr);
   gap: 1rem;
   margin-top: 2rem;
+  align-items: stretch;
 }
 
 .hero-pills li,
@@ -589,11 +590,13 @@ img {
 
 .proof-metrics {
   min-height: 100%;
+  width: 100%;
   padding-bottom: 1.45rem;
   border-color: rgba(157, 191, 255, 0.13);
   box-shadow:
     0 0 0 1px rgba(112, 169, 255, 0.05),
     0 18px 60px rgba(0, 0, 0, 0.24);
+  overflow: hidden;
 }
 
 .proof-card::before {
@@ -666,10 +669,12 @@ img {
   grid-template-columns: repeat(2, 1fr);
   gap: 0.8rem;
   align-content: start;
+  width: 100%;
 }
 
 .proof-stat-grid div,
 .project-meta div {
+  min-width: 0;
   padding: 0.9rem;
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: 1rem;
@@ -692,6 +697,7 @@ img {
 .sideboard-row strong {
   color: var(--text);
   font-size: 0.98rem;
+  overflow-wrap: anywhere;
 }
 
 .floating-card::before,
