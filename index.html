@@ -34,7 +34,7 @@
       </header>
 
       <main>
-        <section class="hero section" id="home">
+        <section class="hero section section-hero" id="home">
           <div class="hero-copy reveal" data-reveal="hero">
             <div class="availability-badge">
               <span class="availability-ping"></span>
@@ -74,6 +74,47 @@
               <li>Observability</li>
               <li>Reliability Engineering</li>
             </ul>
+
+            <div class="hero-proof reveal">
+              <div class="proof-card proof-architecture">
+                <div class="proof-header">
+                  <span class="proof-label">Architecture Lens</span>
+                  <strong>Production Platform Thinking</strong>
+                </div>
+                <div class="pipeline-diagram">
+                  <span>Code</span>
+                  <span>CI/CD</span>
+                  <span>Infra</span>
+                  <span>Observe</span>
+                </div>
+                <p>Designed to communicate a systems mindset focused on deployment safety, platform consistency, and runtime visibility.</p>
+              </div>
+
+              <div class="proof-card proof-metrics">
+                <div class="proof-header">
+                  <span class="proof-label">Operational Priorities</span>
+                  <strong>Reliability as a delivery enabler</strong>
+                </div>
+                <div class="proof-stat-grid">
+                  <div>
+                    <span>Focus</span>
+                    <strong>Uptime</strong>
+                  </div>
+                  <div>
+                    <span>Method</span>
+                    <strong>Automation</strong>
+                  </div>
+                  <div>
+                    <span>Signal</span>
+                    <strong>Observability</strong>
+                  </div>
+                  <div>
+                    <span>Outcome</span>
+                    <strong>Confidence</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="hero-visual reveal" data-reveal="hero">
@@ -124,7 +165,7 @@
           </div>
         </section>
 
-        <section class="section about" id="about">
+        <section class="section about section-panel section-about" id="about">
           <div class="section-heading reveal">
             <p class="eyebrow">About</p>
             <h2>Infrastructure thinking with a sharp eye on reliability.</h2>
@@ -158,7 +199,7 @@
           </div>
         </section>
 
-        <section class="section expertise" id="expertise">
+        <section class="section expertise section-expertise" id="expertise">
           <div class="section-heading reveal">
             <p class="eyebrow">Expertise</p>
             <h2>Capabilities aligned with modern platform and SRE teams.</h2>
@@ -203,10 +244,29 @@
           </div>
         </section>
 
-        <section class="section projects" id="projects">
+        <section class="section projects section-panel section-projects" id="projects">
           <div class="section-heading reveal">
             <p class="eyebrow">Featured Projects</p>
             <h2>Selected infrastructure and platform work presented with a more premium engineering lens.</h2>
+          </div>
+
+          <div class="projects-intro reveal">
+            <div class="projects-lead">
+              <p>
+                This section is designed to feel like proof of production readiness: architecture-oriented visuals,
+                operational framing, and project summaries that emphasize reliability outcomes instead of only listing tools.
+              </p>
+            </div>
+            <div class="projects-sideboard">
+              <div class="sideboard-row">
+                <span>Systems</span>
+                <strong>Cloud, Kubernetes, CI/CD</strong>
+              </div>
+              <div class="sideboard-row">
+                <span>Orientation</span>
+                <strong>Reliability, automation, visibility</strong>
+              </div>
+            </div>
           </div>
 
           <div class="projects-grid">
@@ -220,6 +280,16 @@
               <div class="project-body">
                 <h3>Kubernetes Monitoring Stack</h3>
                 <p>Production-ready monitoring setup for Kubernetes clusters with visibility into system health, workloads, and alerting signals.</p>
+                <div class="project-meta">
+                  <div>
+                    <span>Problem</span>
+                    <strong>Limited cluster visibility</strong>
+                  </div>
+                  <div>
+                    <span>Impact</span>
+                    <strong>Faster operational insight</strong>
+                  </div>
+                </div>
                 <ul class="badge-row">
                   <li>Kubernetes</li>
                   <li>Prometheus</li>
@@ -242,6 +312,16 @@
               <div class="project-body">
                 <h3>AWS Terraform Infrastructure</h3>
                 <p>Reusable infrastructure definitions for AWS environments focused on consistency, scalability, and operational repeatability.</p>
+                <div class="project-meta">
+                  <div>
+                    <span>Problem</span>
+                    <strong>Manual environment drift</strong>
+                  </div>
+                  <div>
+                    <span>Impact</span>
+                    <strong>Repeatable cloud delivery</strong>
+                  </div>
+                </div>
                 <ul class="badge-row">
                   <li>AWS</li>
                   <li>Terraform</li>
@@ -263,6 +343,16 @@
               <div class="project-body">
                 <h3>GitOps CI/CD Pipeline</h3>
                 <p>Deployment workflow centered on automated delivery, safer releases, and infrastructure changes that remain observable and controlled.</p>
+                <div class="project-meta">
+                  <div>
+                    <span>Problem</span>
+                    <strong>Risky release flow</strong>
+                  </div>
+                  <div>
+                    <span>Impact</span>
+                    <strong>Safer deployment cadence</strong>
+                  </div>
+                </div>
                 <ul class="badge-row">
                   <li>GitOps</li>
                   <li>CI/CD</li>
@@ -283,6 +373,16 @@
               <div class="project-body">
                 <h3>Observability Dashboard</h3>
                 <p>Unified dashboard concept for metrics, logs, and alerting signals that improves operational awareness across cloud systems.</p>
+                <div class="project-meta">
+                  <div>
+                    <span>Problem</span>
+                    <strong>Fragmented telemetry</strong>
+                  </div>
+                  <div>
+                    <span>Impact</span>
+                    <strong>Clearer system behavior</strong>
+                  </div>
+                </div>
                 <ul class="badge-row">
                   <li>Monitoring</li>
                   <li>Logs</li>
@@ -303,6 +403,16 @@
               <div class="project-body">
                 <h3>Production Reliability Toolkit</h3>
                 <p>Utilities and operational patterns aimed at improving resilience, incident readiness, and platform confidence in production.</p>
+                <div class="project-meta">
+                  <div>
+                    <span>Problem</span>
+                    <strong>Reactive operations</strong>
+                  </div>
+                  <div>
+                    <span>Impact</span>
+                    <strong>Stronger incident readiness</strong>
+                  </div>
+                </div>
                 <ul class="badge-row">
                   <li>SRE</li>
                   <li>Runbooks</li>
@@ -317,7 +427,7 @@
           </div>
         </section>
 
-        <section class="section stack" id="stack">
+        <section class="section stack section-stack" id="stack">
           <div class="section-heading reveal">
             <p class="eyebrow">Tech Stack</p>
             <h2>Skills grouped into the systems layers that matter most in modern infrastructure engineering.</h2>
@@ -398,7 +508,7 @@
           </div>
         </section>
 
-        <section class="section impact" id="impact">
+        <section class="section impact section-panel section-impact" id="impact">
           <div class="section-heading reveal">
             <p class="eyebrow">Impact Profile</p>
             <h2>A recruiter-friendly summary of how I think about engineering value.</h2>
@@ -436,7 +546,7 @@
           </div>
         </section>
 
-        <section class="section links-section">
+        <section class="section links-section section-links">
           <div class="section-heading reveal">
             <p class="eyebrow">Professional Links</p>
             <h2>Explore my background, profile, and contact information.</h2>
