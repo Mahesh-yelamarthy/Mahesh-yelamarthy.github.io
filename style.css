@@ -591,6 +591,7 @@ img {
 .proof-metrics {
   min-height: 100%;
   width: 100%;
+  padding-right: 1.3rem;
   padding-bottom: 1.45rem;
   border-color: rgba(157, 191, 255, 0.13);
   box-shadow:
@@ -666,7 +667,7 @@ img {
 
 .proof-stat-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   gap: 0.8rem;
   align-content: start;
   width: 100%;
